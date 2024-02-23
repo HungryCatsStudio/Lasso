@@ -21,7 +21,7 @@ keywords = ["zkSNARKs", "cryptography", "proofs"]
 [dependencies]
 ark-curve25519 = "0.4.0"
 ark-ec = { version = "0.4.2", default-features = false }
-ark-ff = { version = "0.4.2", default-features = false }
+ark-ff = { git = "https://github.com/a16z/arkworks-algebra", default-features = false }
 ark-serialize = { version = "0.4.2", default-features = false, features = [
     "derive",
 ] }
