@@ -39,3 +39,8 @@ lto = "fat"
 inherits = "release"
 incremental = true
 lto = "off"
+
+[patch.crates-io]
+ark-ff = { git = "https://github.com/HungryCatsStudio/algebra", branch = "test-field-from-u64" }
+ark-ec = { git = "https://github.com/HungryCatsStudio/algebra", branch = "test-field-from-u64"}
+ark-serialize = { git = "https://github.com/HungryCatsStudio/algebra", branch = "test-field-from-u64" }
