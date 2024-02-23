@@ -20,11 +20,11 @@ keywords = ["zkSNARKs", "cryptography", "proofs"]
 
 [dependencies]
 ark-curve25519 = "0.4.0"
-ark-ec = { version = "0.4.2", default-features = false }
-ark-ff = { git = "https://github.com/a16z/arkworks-algebra", default-features = false }
-ark-serialize = { version = "0.4.2", default-features = false, features = [
+ark-ec = { git = "https://github.com/HungryCatsStudio/algebra", default-features = false, branch = "test-field-from-u64" }
+ark-ff = { git = "https://github.com/HungryCatsStudio/algebra", default-features = false, branch = "test-field-from-u64" }
+ark-serialize = { git = "https://github.com/HungryCatsStudio/algebra", default-features = false, features = [
     "derive",
-] }
+], branch = "test-field-from-u64" }
 ark-std = { version = "0.4.0", default-features = false }
 bellpepper-core = "0.2.1"
 clap = { version = "4.3.10", features = ["derive"] }
